@@ -30,7 +30,6 @@ elemento(tabla,caracter,0)
 
 
 
-
 ### Ejercicio 2: Palíndromos
 * El código que he empleado para realizar este ejercicio es el siguiente:
 
@@ -46,7 +45,31 @@ if palabra ==capicua:
         print("La palabra escogida es polindroma")
 if palabra!= capicua:
         print("La palabra escogida no es polindroma")
-        ```
+ ```
+ 
+ 
+ 
+ 
+ ### Ejercicio 3:  La bandera de Dijkstra
+ * El código que he empleado para realizar este ejercicio es el siguiente:
+ 
+ ```
+ from random import randint
+t=[]
+i=0
+fichas=["Verdes", "Azules", "Rojas"]
+cantidad=int(input("Escribe con cuantas fichas quieres jugar:  "))
+def tablero(t,i,fichas,cantidad):
+    i+=1
+    if i <= cantidad:
+        t.append(fichas[randint(0,2)])
+        tablero(t,i,fichas,cantidad)
+tablero(t,i,fichas,cantidad)
+print(t)
+
+```
+ 
+
       
       
 
