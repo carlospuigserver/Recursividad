@@ -1,8 +1,10 @@
 # Recursividad
-El link GitHub de este repositorio es: https://github.com/carlospuigserver/Recursividad.git
+### El link GitHub de este repositorio es: https://github.com/carlospuigserver/Recursividad.git
 
-Ejercicio 1: Busqueda por dicotomia en una tabla ordenada
+### Ejercicio 1: Busqueda por dicotomia en una tabla ordenada
 
+
+* El código que he empleado para realizar este ejercicio es el siguiente:
 ```
 tabla=input("Crea una tabla de números enteros mediante espacios:  ")
 tabla= tabla.split() #Permite dividir una cadena de caracteres
@@ -29,8 +31,8 @@ elemento(tabla,caracter,0)
 
 
 
-Ejercicio 2: Palíndromos
-
+### Ejercicio 2: Palíndromos
+* El código que he empleado para realizar este ejercicio es el siguiente:
 
 ```
 palabra=(input ("Escribe una palabra y vamos a analizar si es polindroma o no:  "))
@@ -44,26 +46,14 @@ if palabra ==capicua:
         print("La palabra escogida es polindroma")
 if palabra!= capicua:
         print("La palabra escogida no es polindroma")
-      
-      ```
-      
+        ```
       
       
-    
-Ejercicio 3:  La bandera de Dijkstra
 
-```
-from random import randint
-t=[]
-i=0
-fichas=["Verdes", "Azules", "Rojas"]
-cantidad=int(input("Escribe con cuantas fichas quieres jugar:  "))
-def tablero(t,i,fichas,cantidad):
-    i+=1
-    if i <= cantidad:
-        t.append(fichas[randint(0,2)])
-        tablero(t,i,fichas,cantidad)
-tablero(t,i,fichas,cantidad)
-print(t)
 
-```
+
+
+
+
+
+
